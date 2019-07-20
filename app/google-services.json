@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "966742835805",
+    "firebase_url": "https://picha-1be16.firebaseio.com",
+    "project_id": "picha-1be16",
+    "storage_bucket": "picha-1be16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966742835805:android:5fefd23639942a0f",
+        "android_client_info": {
+          "package_name": "com.example.picha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966742835805-e3fi6tm872sncrd7shjpd7sqc0tboscu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.picha",
+            "certificate_hash": "c9bcc98c324fe7c8a511ecb1451aef102844cb16"
+          }
+        },
+        {
+          "client_id": "966742835805-jfskpdc72jbd0c0fn55talq0b1u61rp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ-0j2gtOAOnIuhXBQZ8HXOnvOXhp1eWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966742835805-jfskpdc72jbd0c0fn55talq0b1u61rp9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
