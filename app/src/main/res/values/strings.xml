@@ -19,4 +19,6 @@
     <string name="forgot_password">Forgot password? Click here</string>
     <string name="don_t_have_an_account_register">Don\'t have an account? <font color='#C900FF'>REGISTER</font></string>
     <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_log_in">Already have an account? <font color='#C900FF'>LOG IN</font></string>
 </resources>

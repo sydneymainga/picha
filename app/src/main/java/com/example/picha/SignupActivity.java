@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -20,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SignupActivity extends AppCompatActivity {
 
-    private ImageView continueImage;
+    private Button btnSignup;
 
     private EditText editTextEmail;
     private EditText editTextPassword;
@@ -38,11 +39,11 @@ public class SignupActivity extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference();
         progressDialog = new ProgressDialog(this);
         //getting view by id
-        continueImage = findViewById(R.id.signup_continue);
+        btnSignup = findViewById(R.id.signup_continue);
         editTextEmail = findViewById(R.id.edit_text_signup_email);
         editTextPassword = findViewById(R.id.edit_text_signup_password);
         //what happens when button is clicked?
-        continueImage.setOnClickListener(new View.OnClickListener() {
+        btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 registerUser();//user is registered

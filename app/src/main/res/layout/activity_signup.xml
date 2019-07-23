@@ -3,113 +3,123 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    tools:ignore="ExtraText">
+
 
     <ImageView
-        android:id="@+id/signup_back"
-        android:layout_width="wrap_content"
-        android:layout_height="79dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/baseline_keyboard_arrow_left_white_48" />
-
-    <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/iv_app_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp"
-        android:text="@string/signup_title"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:layout_marginTop="25dp"
+        android:src="@drawable/userphoto"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView7"
-        android:layout_below="@+id/edit_text_signup_username"
-        android:text="@string/email"
-        android:textColor="@android:color/white"
-        android:textSize="14sp" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_app_logo"
+        android:layout_marginTop="25dp"
+        android:text="@string/register"
+        android:textSize="@dimen/text_high"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="true" />
+
 
     <EditText
         android:id="@+id/edit_text_signup_email"
-        android:layout_width="278dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView5"
+        android:layout_below="@id/edit_text_signup_username"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/margin_low"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/field_background"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/raleway_regular"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_below="@+id/edit_text_signup_email"
-        android:text="@string/password"
-        android:textColor="@android:color/white" />
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorOpacityBlack"
+        android:textSize="@dimen/text_mid"
+        tools:ignore="Autofill,RtlCompat" />
 
     <EditText
         android:id="@+id/edit_text_signup_password"
-        android:layout_width="278dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView6"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
+        android:padding="15dp"
+        android:drawablePadding="15dp"
+        android:layout_below="@id/edit_text_signup_email"
+        android:layout_marginTop="@dimen/margin_low"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/field_background"
+        android:drawableStart="@drawable/ic_locked"
         android:inputType="textPassword"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:textSize="14sp" />
+        android:textSize="@dimen/text_mid"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorOpacityBlack"
+        tools:ignore="Autofill,RtlCompat" />
 
-    <ImageView
+    <Button
         android:id="@+id/signup_continue"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        app:srcCompat="@drawable/oval_background_solid" />
+        android:layout_above="@id/tv_login"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/margin_high"
+        android:layout_marginEnd="@dimen/margin_high"
+        android:background="@drawable/button_background1"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="false" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="47dp"
-        android:text="@string/text_continue"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="20sp" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_mid"
+        android:text="@string/already_have_an_account_log_in"
+        android:textSize="@dimen/text_low"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
 
     <EditText
         android:id="@+id/edit_text_signup_username"
-        android:layout_width="279dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView7"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="@android:color/white"
-        android:ems="10"
-        android:inputType="textCapSentences"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
-        android:textSize="14sp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginStart="60dp"
-        android:text="@string/username"
-        android:textColor="@android:color/white" />
+        android:padding="15dp"
+        android:drawablePadding="15dp"
+        android:layout_below="@id/tv_register"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/field_background"
+        android:drawableStart="@drawable/ic_username"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular"
+        android:hint="@string/username"
+        android:textColorHint="@color/colorOpacityBlack"
+        tools:ignore="Autofill,RtlCompat" />
 
 </RelativeLayout>
