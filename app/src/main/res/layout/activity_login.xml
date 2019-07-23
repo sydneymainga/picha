@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -80,7 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/tv_create_account"
+        android:layout_below="@+id/login_forgot"
         android:layout_marginBottom="50dp"
         android:layout_marginStart="@dimen/margin_high"
         android:layout_marginEnd="@dimen/margin_high"
@@ -105,16 +104,5 @@
         android:fontFamily="@font/raleway_regular"
         tools:ignore="RtlCompat" />
 
-    <TextView
-        android:id="@+id/tv_create_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/margin_mid"
-        android:text="@string/don_t_have_an_account_register"
-        android:textSize="@dimen/text_low"
-        android:textColor="@android:color/black"
-        android:fontFamily="@font/raleway_regular" />
 
 </RelativeLayout>
