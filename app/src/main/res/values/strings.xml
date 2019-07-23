@@ -16,4 +16,7 @@
     <string name="login_forgot"><u>Forgot password? Click here</u></string>
     <string name="resetactivity_email_title">Enter your email below</string>
     <string name="resetactivity_sendemail">Send Email</string>
+    <string name="forgot_password">Forgot password? Click here</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? <font color='#C900FF'>REGISTER</font></string>
+    <string name="log_in">Log In</string>
 </resources>

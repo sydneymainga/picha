@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
-    private ImageView continueImage;
+    private Button btnLogin;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextView resetPassword;
@@ -34,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
         //finding view by id
-        continueImage = findViewById(R.id.login_continue);
+        btnLogin = findViewById(R.id.login_continue);
         editTextEmail = findViewById(R.id.edit_text_login_email);
         editTextPassword = findViewById(R.id.edit_text_login_password);
         resetPassword = findViewById(R.id.login_forgot);
@@ -44,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
             finish();
             startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
         }
-        continueImage.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 loginUser();
