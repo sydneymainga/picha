@@ -23,4 +23,6 @@
     <string name="already_have_an_account_log_in">Already have an account? <font color='#C900FF'>LOG IN</font></string>
     <string name="sort">sort</string>
     <string name="search">search</string>
+    <string name="health_worker">Health Worker</string>
+    <string name="comm_leader">Community Leader</string>
 </resources>

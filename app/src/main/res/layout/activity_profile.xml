@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
     tools:context=".ProfileActivity">
 
-
+<!--
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -29,4 +28,52 @@
         android:hint="@string/email_hint"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white" />
+
+        -->
+
+    <Button
+        android:id="@+id/btn_commleader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_healthworker"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/margin_high"
+        android:layout_marginEnd="@dimen/margin_high"
+        android:background="@drawable/button_background1"
+        android:text="@string/comm_leader"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_healthworker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_create_account"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/margin_high"
+        android:layout_marginEnd="@dimen/margin_high"
+        android:background="@drawable/button_background1"
+        android:text="@string/health_worker"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="false" />
+
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_mid"
+        android:text="@string/don_t_have_an_account_register"
+        android:textSize="@dimen/text_low"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
+
 </RelativeLayout>
