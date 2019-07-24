@@ -2,7 +2,8 @@ package com.example.picha;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,16 +37,38 @@ public class ProfileActivity extends AppCompatActivity {
         //putting user info in the view
         textViewUserEmail.setText("Welcome " + user.getEmail());
         //finding view
-        logoutUser = findViewById(R.id.imageView_profile_logout);
+        //logoutUser = findViewById(R.id.imageView_profile_logout);
         //logging out user
-        logoutUser.setOnClickListener(new View.OnClickListener() {
+        /**logoutUser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 firebaseAuth.signOut();
                 finish();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
-        });
+        });**/
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        // Handle action bar actions click
+        switch (item.getItemId()) {
+
+            case R.id.action_logout:
+                firebaseAuth.signOut();
+                finish();
+                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 }
