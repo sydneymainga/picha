@@ -23,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageView signupImage = findViewById(R.id.imageview_signup);
+        /** ImageView signupImage = findViewById(R.id.imageview_signup);
         signupImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SignupActivity.class);
                 startActivity(intent);
             }
-        });
+        });**/
 
     }
 }

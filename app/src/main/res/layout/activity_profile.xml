@@ -1,42 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
     tools:context=".ProfileActivity">
 
-    <ImageView
-        android:id="@+id/imageView_profile_logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="32dp"
-        app:srcCompat="@drawable/oval_background_solid"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="501dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="41dp"
-        android:text="@string/logout"
-        android:textColor="#f37335"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="513dp" />
-
+<!--
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
         android:text="@string/profile_title"
         android:textColor="@android:color/white"
@@ -50,8 +24,56 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="74dp"
-        android:layout_toStartOf="@+id/textView9"
+
         android:hint="@string/email_hint"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white" />
+
+        -->
+
+    <Button
+        android:id="@+id/btn_commleader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_healthworker"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/margin_high"
+        android:layout_marginEnd="@dimen/margin_high"
+        android:background="@drawable/button_background1"
+        android:text="@string/comm_leader"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_healthworker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_create_account"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/margin_high"
+        android:layout_marginEnd="@dimen/margin_high"
+        android:background="@drawable/button_background1"
+        android:text="@string/health_worker"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="false" />
+
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_mid"
+        android:text="@string/don_t_have_an_account_register"
+        android:textSize="@dimen/text_low"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
+
 </RelativeLayout>

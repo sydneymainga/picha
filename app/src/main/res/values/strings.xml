@@ -16,4 +16,13 @@
     <string name="login_forgot"><u>Forgot password? Click here</u></string>
     <string name="resetactivity_email_title">Enter your email below</string>
     <string name="resetactivity_sendemail">Send Email</string>
+    <string name="forgot_password">Forgot password? Click here</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? <font color='#C900FF'>REGISTER</font></string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_log_in">Already have an account? <font color='#C900FF'>LOG IN</font></string>
+    <string name="sort">sort</string>
+    <string name="search">search</string>
+    <string name="health_worker">Health Worker</string>
+    <string name="comm_leader">Community Leader</string>
 </resources>
